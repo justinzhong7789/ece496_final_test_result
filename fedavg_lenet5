@@ -1,0 +1,739 @@
+2023-04-04 19:07:16.613556: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[INFO][19:07:21]: Server: fedavg
+[INFO][19:07:21]: [93m[1m[56994] Logging runtime results to: ./results/56994.csv.[0m
+[INFO][19:07:21]: [Server #56994] Started training on 10 clients with 2 per round.
+[INFO][19:07:21]: [Server #56994] Configuring the server...
+[INFO][19:07:21]: Training: 5 rounds or accuracy above 97.0%
+
+[INFO][19:07:21]: Trainer: basic
+[INFO][19:07:21]: Algorithm: fedavg
+[INFO][19:07:21]: Server: Using Processor for receiving payload: model_decompress
+[INFO][19:07:21]: Data source: MNIST
+[INFO][19:07:21]: Starting client #1's process.
+[INFO][19:07:28]: Client: simple
+[INFO][19:07:28]: Starting a simple client #1.
+[INFO][19:07:28]: Trainer: basic
+[INFO][19:07:28]: Algorithm: fedavg
+[INFO][19:07:28]: Client: Using Processor for sending payload: unstructured_pruning
+[INFO][19:07:28]: Client: Using Processor for sending payload: model_compress
+[INFO][19:07:31]: Setting the random seed for selecting clients: 1
+[INFO][19:07:31]: Starting a server at address 127.0.0.1 and port 8000.
+[INFO][19:07:33]: [Client #1] Contacting the server.
+[INFO][19:07:33]: [Client #1] Connecting to the server at http://127.0.0.1:8000.
+[INFO][19:07:33]: 127.0.0.1 [04/Apr/2023:23:07:33 +0000] "GET /socket.io/?transport=polling&EIO=4&t=1680649653.398699 HTTP/1.1" 200 293 "-" "Python/3.9 aiohttp/3.8.3"
+[INFO][19:07:33]: [Server #56994] A new client just connected.
+[INFO][19:07:33]: [Client #1] Connected to the server.
+[INFO][19:07:33]: [Client #1] Waiting to be selected.
+[INFO][19:07:33]: [Server #56994] New client with id #1 arrived.
+[INFO][19:07:33]: [Server #56994] Starting training.
+[INFO][19:07:33]: [93m[1m
+[Server #56994] Starting round 1/5.[0m
+[INFO][19:07:33]: [Server #56994] Selected clients: [3, 2]
+[INFO][19:07:33]: [Server #56994] Selecting client #3 for training.
+[INFO][19:07:33]: [Server #56994] Sending the current model to client #3 (simulated).
+[INFO][19:07:33]: [Server #56994] Sending 0.24 MB of payload data to client #3 (simulated).
+[INFO][19:07:33]: Client: Using Processor for sending payload: unstructured_pruning
+[INFO][19:07:33]: Client: Using Processor for sending payload: model_compress
+[INFO][19:07:33]: [Client #3] Selected by the server.
+[INFO][19:07:33]: [Client #3] Loading its data source...
+[INFO][19:07:33]: Data source: MNIST
+[INFO][19:07:33]: [Client #3] Dataset size: 60000
+[INFO][19:07:33]: [Client #3] Sampler: iid
+[INFO][19:07:33]: [Client #3] Received 0.24 MB of payload data from the server (simulated).
+[INFO][19:07:33]: [Client #3] Start to process inbound data.
+[INFO][19:07:33]: [93m[1m[Client #3] Started training in communication round #1.[0m
+[INFO][19:07:40]: [Client #3] Loading the dataset with size 20000.
+[INFO][19:07:40]: [93m[1m[Client #3] Started training epoch 1.[0m
+[INFO][19:07:40]: [Client #3] Epoch: [1/5][0/625]	Loss: 2.299018
+[INFO][19:07:40]: [Client #3] Epoch: [1/5][10/625]	Loss: 2.304608
+[INFO][19:07:40]: [Client #3] Epoch: [1/5][20/625]	Loss: 2.279967
+[INFO][19:07:41]: [Client #3] Epoch: [1/5][30/625]	Loss: 2.218010
+[INFO][19:07:41]: [Client #3] Epoch: [1/5][40/625]	Loss: 2.070618
+[INFO][19:07:41]: [Client #3] Epoch: [1/5][50/625]	Loss: 1.778558
+[INFO][19:07:41]: [Client #3] Epoch: [1/5][60/625]	Loss: 0.936589
+[INFO][19:07:41]: [Client #3] Epoch: [1/5][70/625]	Loss: 0.898993
+[INFO][19:07:41]: [Client #3] Epoch: [1/5][80/625]	Loss: 0.670635
+[INFO][19:07:41]: [Client #3] Epoch: [1/5][90/625]	Loss: 0.725893
+[INFO][19:07:41]: [Client #3] Epoch: [1/5][100/625]	Loss: 0.398649
+[INFO][19:07:41]: [Client #3] Epoch: [1/5][110/625]	Loss: 0.521966
+[INFO][19:07:41]: [Client #3] Epoch: [1/5][120/625]	Loss: 0.300597
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][130/625]	Loss: 0.587818
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][140/625]	Loss: 0.494065
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][150/625]	Loss: 0.486332
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][160/625]	Loss: 0.209313
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][170/625]	Loss: 0.206015
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][180/625]	Loss: 0.169105
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][190/625]	Loss: 0.365604
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][200/625]	Loss: 0.094991
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][210/625]	Loss: 0.144570
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][220/625]	Loss: 0.339409
+[INFO][19:07:42]: [Client #3] Epoch: [1/5][230/625]	Loss: 0.260337
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][240/625]	Loss: 0.244914
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][250/625]	Loss: 0.521717
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][260/625]	Loss: 0.115095
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][270/625]	Loss: 0.115008
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][280/625]	Loss: 0.149339
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][290/625]	Loss: 0.089584
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][300/625]	Loss: 0.053220
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][310/625]	Loss: 0.120473
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][320/625]	Loss: 0.208367
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][330/625]	Loss: 0.246893
+[INFO][19:07:43]: [Client #3] Epoch: [1/5][340/625]	Loss: 0.074165
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][350/625]	Loss: 0.027682
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][360/625]	Loss: 0.152661
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][370/625]	Loss: 0.015380
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][380/625]	Loss: 0.038838
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][390/625]	Loss: 0.223909
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][400/625]	Loss: 0.003129
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][410/625]	Loss: 0.053359
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][420/625]	Loss: 0.021139
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][430/625]	Loss: 0.136173
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][440/625]	Loss: 0.146826
+[INFO][19:07:44]: [Client #3] Epoch: [1/5][450/625]	Loss: 0.074486
+[INFO][19:07:45]: [Client #3] Epoch: [1/5][460/625]	Loss: 0.190341
+[INFO][19:07:45]: [Client #3] Epoch: [1/5][470/625]	Loss: 0.133173
+[INFO][19:07:45]: [Client #3] Epoch: [1/5][480/625]	Loss: 0.120546
+[INFO][19:07:45]: [Client #3] Epoch: [1/5][490/625]	Loss: 0.006364
+[INFO][19:07:45]: [Client #3] Epoch: [1/5][500/625]	Loss: 0.116008
+[INFO][19:07:45]: [Client #3] Epoch: [1/5][510/625]	Loss: 0.034890
+[INFO][19:07:45]: [Client #3] Epoch: [1/5][520/625]	Loss: 0.028142
+[INFO][19:07:45]: [Client #3] Epoch: [1/5][530/625]	Loss: 0.048593
+[INFO][19:07:45]: [Client #3] Epoch: [1/5][540/625]	Loss: 0.252207
+[INFO][19:07:45]: [Client #3] Epoch: [1/5][550/625]	Loss: 0.023458
+[INFO][19:07:46]: [Client #3] Epoch: [1/5][560/625]	Loss: 0.145495
+[INFO][19:07:46]: [Client #3] Epoch: [1/5][570/625]	Loss: 0.228294
+[INFO][19:07:46]: [Client #3] Epoch: [1/5][580/625]	Loss: 0.094981
+[INFO][19:07:46]: [Client #3] Epoch: [1/5][590/625]	Loss: 0.171723
+[INFO][19:07:46]: [Client #3] Epoch: [1/5][600/625]	Loss: 0.051606
+[INFO][19:07:46]: [Client #3] Epoch: [1/5][610/625]	Loss: 0.246004
+[INFO][19:07:46]: [Client #3] Epoch: [1/5][620/625]	Loss: 0.042395
+[INFO][19:07:46]: [93m[1m[Client #3] Started training epoch 2.[0m
+[INFO][19:07:46]: [Client #3] Epoch: [2/5][0/625]	Loss: 0.107634
+[INFO][19:07:46]: [Client #3] Epoch: [2/5][10/625]	Loss: 0.183141
+[INFO][19:07:46]: [Client #3] Epoch: [2/5][20/625]	Loss: 0.219175
+[INFO][19:07:46]: [Client #3] Epoch: [2/5][30/625]	Loss: 0.277122
+[INFO][19:07:47]: [Client #3] Epoch: [2/5][40/625]	Loss: 0.006670
+[INFO][19:07:47]: [Client #3] Epoch: [2/5][50/625]	Loss: 0.125530
+[INFO][19:07:47]: [Client #3] Epoch: [2/5][60/625]	Loss: 0.124270
+[INFO][19:07:47]: [Client #3] Epoch: [2/5][70/625]	Loss: 0.038462
+[INFO][19:07:47]: [Client #3] Epoch: [2/5][80/625]	Loss: 0.016493
+[INFO][19:07:47]: [Client #3] Epoch: [2/5][90/625]	Loss: 0.110153
+[INFO][19:07:47]: [Client #3] Epoch: [2/5][100/625]	Loss: 0.235692
+[INFO][19:07:47]: [Client #3] Epoch: [2/5][110/625]	Loss: 0.289464
+[INFO][19:07:47]: [Client #3] Epoch: [2/5][120/625]	Loss: 0.056751
+[INFO][19:07:47]: [Client #3] Epoch: [2/5][130/625]	Loss: 0.074359
+[INFO][19:07:48]: [Client #3] Epoch: [2/5][140/625]	Loss: 0.023373
+[INFO][19:07:48]: [Client #3] Epoch: [2/5][150/625]	Loss: 0.019495
+[INFO][19:07:48]: [Client #3] Epoch: [2/5][160/625]	Loss: 0.076855
+[INFO][19:07:48]: [Client #3] Epoch: [2/5][170/625]	Loss: 0.024420
+[INFO][19:07:48]: [Client #3] Epoch: [2/5][180/625]	Loss: 0.064042
+[INFO][19:07:48]: [Client #3] Epoch: [2/5][190/625]	Loss: 0.020502
+[INFO][19:07:48]: [Client #3] Epoch: [2/5][200/625]	Loss: 0.023564
+[INFO][19:07:48]: [Client #3] Epoch: [2/5][210/625]	Loss: 0.016906
+[INFO][19:07:48]: [Client #3] Epoch: [2/5][220/625]	Loss: 0.036740
+[INFO][19:07:48]: [Client #3] Epoch: [2/5][230/625]	Loss: 0.165249
+[INFO][19:07:49]: [Client #3] Epoch: [2/5][240/625]	Loss: 0.029613
+[INFO][19:07:49]: [Client #3] Epoch: [2/5][250/625]	Loss: 0.005826
+[INFO][19:07:49]: [Client #3] Epoch: [2/5][260/625]	Loss: 0.056110
+[INFO][19:07:49]: [Client #3] Epoch: [2/5][270/625]	Loss: 0.190112
+[INFO][19:07:49]: [Client #3] Epoch: [2/5][280/625]	Loss: 0.098392
+[INFO][19:07:49]: [Client #3] Epoch: [2/5][290/625]	Loss: 0.024073
+[INFO][19:07:49]: [Client #3] Epoch: [2/5][300/625]	Loss: 0.401602
+[INFO][19:07:49]: [Client #3] Epoch: [2/5][310/625]	Loss: 0.008108
+[INFO][19:07:49]: [Client #3] Epoch: [2/5][320/625]	Loss: 0.113094
+[INFO][19:07:49]: [Client #3] Epoch: [2/5][330/625]	Loss: 0.021579
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][340/625]	Loss: 0.068997
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][350/625]	Loss: 0.104612
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][360/625]	Loss: 0.029367
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][370/625]	Loss: 0.037238
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][380/625]	Loss: 0.037937
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][390/625]	Loss: 0.037143
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][400/625]	Loss: 0.001835
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][410/625]	Loss: 0.063200
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][420/625]	Loss: 0.087940
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][430/625]	Loss: 0.034659
+[INFO][19:07:50]: [Client #3] Epoch: [2/5][440/625]	Loss: 0.082352
+[INFO][19:07:51]: [Client #3] Epoch: [2/5][450/625]	Loss: 0.055057
+[INFO][19:07:51]: [Client #3] Epoch: [2/5][460/625]	Loss: 0.063229
+[INFO][19:07:51]: [Client #3] Epoch: [2/5][470/625]	Loss: 0.098899
+[INFO][19:07:51]: [Client #3] Epoch: [2/5][480/625]	Loss: 0.054146
+[INFO][19:07:51]: [Client #3] Epoch: [2/5][490/625]	Loss: 0.002605
+[INFO][19:07:51]: [Client #3] Epoch: [2/5][500/625]	Loss: 0.118987
+[INFO][19:07:51]: [Client #3] Epoch: [2/5][510/625]	Loss: 0.002081
+[INFO][19:07:51]: [Client #3] Epoch: [2/5][520/625]	Loss: 0.223140
+[INFO][19:07:51]: [Client #3] Epoch: [2/5][530/625]	Loss: 0.002237
+[INFO][19:07:51]: [Client #3] Epoch: [2/5][540/625]	Loss: 0.032657
+[INFO][19:07:52]: [Client #3] Epoch: [2/5][550/625]	Loss: 0.080532
+[INFO][19:07:52]: [Client #3] Epoch: [2/5][560/625]	Loss: 0.003722
+[INFO][19:07:52]: [Client #3] Epoch: [2/5][570/625]	Loss: 0.015317
+[INFO][19:07:52]: [Client #3] Epoch: [2/5][580/625]	Loss: 0.007895
+[INFO][19:07:52]: [Client #3] Epoch: [2/5][590/625]	Loss: 0.009312
+[INFO][19:07:52]: [Client #3] Epoch: [2/5][600/625]	Loss: 0.002009
+[INFO][19:07:52]: [Client #3] Epoch: [2/5][610/625]	Loss: 0.007394
+[INFO][19:07:52]: [Client #3] Epoch: [2/5][620/625]	Loss: 0.067714
+[INFO][19:07:52]: [93m[1m[Client #3] Started training epoch 3.[0m
+[INFO][19:07:52]: [Client #3] Epoch: [3/5][0/625]	Loss: 0.083816
+[INFO][19:07:52]: [Client #3] Epoch: [3/5][10/625]	Loss: 0.003448
+[INFO][19:07:53]: [Client #3] Epoch: [3/5][20/625]	Loss: 0.009435
+[INFO][19:07:53]: [Client #3] Epoch: [3/5][30/625]	Loss: 0.022612
+[INFO][19:07:53]: [Client #3] Epoch: [3/5][40/625]	Loss: 0.069361
+[INFO][19:07:53]: [Client #3] Epoch: [3/5][50/625]	Loss: 0.036267
+[INFO][19:07:53]: [Client #3] Epoch: [3/5][60/625]	Loss: 0.002971
+[INFO][19:07:53]: [Client #3] Epoch: [3/5][70/625]	Loss: 0.007975
+[INFO][19:07:53]: [Client #3] Epoch: [3/5][80/625]	Loss: 0.000551
+[INFO][19:07:53]: [Client #3] Epoch: [3/5][90/625]	Loss: 0.013201
+[INFO][19:07:53]: [Client #3] Epoch: [3/5][100/625]	Loss: 0.018173
+[INFO][19:07:53]: [Client #3] Epoch: [3/5][110/625]	Loss: 0.018033
+[INFO][19:07:54]: [Client #3] Epoch: [3/5][120/625]	Loss: 0.094490
+[INFO][19:07:54]: [Client #3] Epoch: [3/5][130/625]	Loss: 0.046989
+[INFO][19:07:54]: [Client #3] Epoch: [3/5][140/625]	Loss: 0.004942
+[INFO][19:07:54]: [Client #3] Epoch: [3/5][150/625]	Loss: 0.002874
+[INFO][19:07:54]: [Client #3] Epoch: [3/5][160/625]	Loss: 0.002144
+[INFO][19:07:54]: [Client #3] Epoch: [3/5][170/625]	Loss: 0.014442
+[INFO][19:07:54]: [Client #3] Epoch: [3/5][180/625]	Loss: 0.000449
+[INFO][19:07:54]: [Client #3] Epoch: [3/5][190/625]	Loss: 0.005097
+[INFO][19:07:54]: [Client #3] Epoch: [3/5][200/625]	Loss: 0.063680
+[INFO][19:07:54]: [Client #3] Epoch: [3/5][210/625]	Loss: 0.014010
+[INFO][19:07:55]: [Client #3] Epoch: [3/5][220/625]	Loss: 0.003156
+[INFO][19:07:55]: [Client #3] Epoch: [3/5][230/625]	Loss: 0.077665
+[INFO][19:07:55]: [Client #3] Epoch: [3/5][240/625]	Loss: 0.014850
+[INFO][19:07:55]: [Client #3] Epoch: [3/5][250/625]	Loss: 0.022685
+[INFO][19:07:55]: [Client #3] Epoch: [3/5][260/625]	Loss: 0.000181
+[INFO][19:07:55]: [Client #3] Epoch: [3/5][270/625]	Loss: 0.007508
+[INFO][19:07:55]: [Client #3] Epoch: [3/5][280/625]	Loss: 0.000445
+[INFO][19:07:55]: [Client #3] Epoch: [3/5][290/625]	Loss: 0.001156
+[INFO][19:07:55]: [Client #3] Epoch: [3/5][300/625]	Loss: 0.024205
+[INFO][19:07:55]: [Client #3] Epoch: [3/5][310/625]	Loss: 0.012651
+[INFO][19:07:56]: [Client #3] Epoch: [3/5][320/625]	Loss: 0.004832
+[INFO][19:07:56]: [Client #3] Epoch: [3/5][330/625]	Loss: 0.011287
+[INFO][19:07:56]: [Client #3] Epoch: [3/5][340/625]	Loss: 0.004558
+[INFO][19:07:56]: [Client #3] Epoch: [3/5][350/625]	Loss: 0.001796
+[INFO][19:07:56]: [Client #3] Epoch: [3/5][360/625]	Loss: 0.068383
+[INFO][19:07:56]: [Client #3] Epoch: [3/5][370/625]	Loss: 0.033987
+[INFO][19:07:56]: [Client #3] Epoch: [3/5][380/625]	Loss: 0.001769
+[INFO][19:07:56]: [Client #3] Epoch: [3/5][390/625]	Loss: 0.022411
+[INFO][19:07:56]: [Client #3] Epoch: [3/5][400/625]	Loss: 0.006824
+[INFO][19:07:57]: [Client #3] Epoch: [3/5][410/625]	Loss: 0.106829
+[INFO][19:07:57]: [Client #3] Epoch: [3/5][420/625]	Loss: 0.000672
+[INFO][19:07:57]: [Client #3] Epoch: [3/5][430/625]	Loss: 0.026679
+[INFO][19:07:57]: [Client #3] Epoch: [3/5][440/625]	Loss: 0.082260
+[INFO][19:07:57]: [Client #3] Epoch: [3/5][450/625]	Loss: 0.155582
+[INFO][19:07:57]: [Client #3] Epoch: [3/5][460/625]	Loss: 0.013330
+[INFO][19:07:57]: [Client #3] Epoch: [3/5][470/625]	Loss: 0.078268
+[INFO][19:07:57]: [Client #3] Epoch: [3/5][480/625]	Loss: 0.022904
+[INFO][19:07:57]: [Client #3] Epoch: [3/5][490/625]	Loss: 0.106050
+[INFO][19:07:57]: [Client #3] Epoch: [3/5][500/625]	Loss: 0.016769
+[INFO][19:07:58]: [Client #3] Epoch: [3/5][510/625]	Loss: 0.000575
+[INFO][19:07:58]: [Client #3] Epoch: [3/5][520/625]	Loss: 0.000735
+[INFO][19:07:58]: [Client #3] Epoch: [3/5][530/625]	Loss: 0.026239
+[INFO][19:07:58]: [Client #3] Epoch: [3/5][540/625]	Loss: 0.012134
+[INFO][19:07:58]: [Client #3] Epoch: [3/5][550/625]	Loss: 0.000131
+[INFO][19:07:58]: [Client #3] Epoch: [3/5][560/625]	Loss: 0.000247
+[INFO][19:07:58]: [Client #3] Epoch: [3/5][570/625]	Loss: 0.000244
+[INFO][19:07:58]: [Client #3] Epoch: [3/5][580/625]	Loss: 0.008823
+[INFO][19:07:58]: [Client #3] Epoch: [3/5][590/625]	Loss: 0.018674
+[INFO][19:07:59]: [Client #3] Epoch: [3/5][600/625]	Loss: 0.001485
+[INFO][19:07:59]: [Client #3] Epoch: [3/5][610/625]	Loss: 0.000025
+[INFO][19:07:59]: [Client #3] Epoch: [3/5][620/625]	Loss: 0.000370
+[INFO][19:07:59]: [93m[1m[Client #3] Started training epoch 4.[0m
+[INFO][19:07:59]: [Client #3] Epoch: [4/5][0/625]	Loss: 0.071676
+[INFO][19:07:59]: [Client #3] Epoch: [4/5][10/625]	Loss: 0.002654
+[INFO][19:07:59]: [Client #3] Epoch: [4/5][20/625]	Loss: 0.000337
+[INFO][19:07:59]: [Client #3] Epoch: [4/5][30/625]	Loss: 0.003694
+[INFO][19:07:59]: [Client #3] Epoch: [4/5][40/625]	Loss: 0.000376
+[INFO][19:07:59]: [Client #3] Epoch: [4/5][50/625]	Loss: 0.000270
+[INFO][19:07:59]: [Client #3] Epoch: [4/5][60/625]	Loss: 0.004690
+[INFO][19:08:00]: [Client #3] Epoch: [4/5][70/625]	Loss: 0.029056
+[INFO][19:08:00]: [Client #3] Epoch: [4/5][80/625]	Loss: 0.000284
+[INFO][19:08:00]: [Client #3] Epoch: [4/5][90/625]	Loss: 0.144158
+[INFO][19:08:00]: [Client #3] Epoch: [4/5][100/625]	Loss: 0.008957
+[INFO][19:08:00]: [Client #3] Epoch: [4/5][110/625]	Loss: 0.015004
+[INFO][19:08:00]: [Client #3] Epoch: [4/5][120/625]	Loss: 0.000064
+[INFO][19:08:00]: [Client #3] Epoch: [4/5][130/625]	Loss: 0.016229
+[INFO][19:08:00]: [Client #3] Epoch: [4/5][140/625]	Loss: 0.005490
+[INFO][19:08:00]: [Client #3] Epoch: [4/5][150/625]	Loss: 0.005876
+[INFO][19:08:00]: [Client #3] Epoch: [4/5][160/625]	Loss: 0.011992
+[INFO][19:08:01]: [Client #3] Epoch: [4/5][170/625]	Loss: 0.005804
+[INFO][19:08:01]: [Client #3] Epoch: [4/5][180/625]	Loss: 0.027981
+[INFO][19:08:01]: [Client #3] Epoch: [4/5][190/625]	Loss: 0.001529
+[INFO][19:08:01]: [Client #3] Epoch: [4/5][200/625]	Loss: 0.003093
+[INFO][19:08:01]: [Client #3] Epoch: [4/5][210/625]	Loss: 0.000543
+[INFO][19:08:01]: [Client #3] Epoch: [4/5][220/625]	Loss: 0.036452
+[INFO][19:08:01]: [Client #3] Epoch: [4/5][230/625]	Loss: 0.005980
+[INFO][19:08:01]: [Client #3] Epoch: [4/5][240/625]	Loss: 0.002063
+[INFO][19:08:01]: [Client #3] Epoch: [4/5][250/625]	Loss: 0.091747
+[INFO][19:08:01]: [Client #3] Epoch: [4/5][260/625]	Loss: 0.041519
+[INFO][19:08:02]: [Client #3] Epoch: [4/5][270/625]	Loss: 0.023943
+[INFO][19:08:02]: [Client #3] Epoch: [4/5][280/625]	Loss: 0.001518
+[INFO][19:08:02]: [Client #3] Epoch: [4/5][290/625]	Loss: 0.000266
+[INFO][19:08:02]: [Client #3] Epoch: [4/5][300/625]	Loss: 0.004667
+[INFO][19:08:02]: [Client #3] Epoch: [4/5][310/625]	Loss: 0.039667
+[INFO][19:08:02]: [Client #3] Epoch: [4/5][320/625]	Loss: 0.024097
+[INFO][19:08:02]: [Client #3] Epoch: [4/5][330/625]	Loss: 0.001801
+[INFO][19:08:02]: [Client #3] Epoch: [4/5][340/625]	Loss: 0.117193
+[INFO][19:08:02]: [Client #3] Epoch: [4/5][350/625]	Loss: 0.003618
+[INFO][19:08:02]: [Client #3] Epoch: [4/5][360/625]	Loss: 0.001008
+[INFO][19:08:03]: [Client #3] Epoch: [4/5][370/625]	Loss: 0.008913
+[INFO][19:08:03]: [Client #3] Epoch: [4/5][380/625]	Loss: 0.006265
+[INFO][19:08:03]: [Client #3] Epoch: [4/5][390/625]	Loss: 0.001225
+[INFO][19:08:03]: [Client #3] Epoch: [4/5][400/625]	Loss: 0.000732
+[INFO][19:08:03]: [Client #3] Epoch: [4/5][410/625]	Loss: 0.000372
+[INFO][19:08:03]: [Client #3] Epoch: [4/5][420/625]	Loss: 0.000149
+[INFO][19:08:03]: [Client #3] Epoch: [4/5][430/625]	Loss: 0.001067
+[INFO][19:08:03]: [Client #3] Epoch: [4/5][440/625]	Loss: 0.010660
+[INFO][19:08:03]: [Client #3] Epoch: [4/5][450/625]	Loss: 0.014878
+[INFO][19:08:04]: [Client #3] Epoch: [4/5][460/625]	Loss: 0.001152
+[INFO][19:08:04]: [Client #3] Epoch: [4/5][470/625]	Loss: 0.003773
+[INFO][19:08:04]: [Client #3] Epoch: [4/5][480/625]	Loss: 0.011006
+[INFO][19:08:04]: [Client #3] Epoch: [4/5][490/625]	Loss: 0.001179
+[INFO][19:08:04]: [Client #3] Epoch: [4/5][500/625]	Loss: 0.032578
+[INFO][19:08:04]: [Client #3] Epoch: [4/5][510/625]	Loss: 0.000360
+[INFO][19:08:04]: [Client #3] Epoch: [4/5][520/625]	Loss: 0.037685
+[INFO][19:08:04]: [Client #3] Epoch: [4/5][530/625]	Loss: 0.000374
+[INFO][19:08:04]: [Client #3] Epoch: [4/5][540/625]	Loss: 0.000197
+[INFO][19:08:04]: [Client #3] Epoch: [4/5][550/625]	Loss: 0.020643
+[INFO][19:08:05]: [Client #3] Epoch: [4/5][560/625]	Loss: 0.003331
+[INFO][19:08:05]: [Client #3] Epoch: [4/5][570/625]	Loss: 0.039621
+[INFO][19:08:05]: [Client #3] Epoch: [4/5][580/625]	Loss: 0.000146
+[INFO][19:08:05]: [Client #3] Epoch: [4/5][590/625]	Loss: 0.000059
+[INFO][19:08:05]: [Client #3] Epoch: [4/5][600/625]	Loss: 0.219591
+[INFO][19:08:05]: [Client #3] Epoch: [4/5][610/625]	Loss: 0.065462
+[INFO][19:08:05]: [Client #3] Epoch: [4/5][620/625]	Loss: 0.003089
+[INFO][19:08:05]: [93m[1m[Client #3] Started training epoch 5.[0m
+[INFO][19:08:05]: [Client #3] Epoch: [5/5][0/625]	Loss: 0.000691
+[INFO][19:08:06]: [Client #3] Epoch: [5/5][10/625]	Loss: 0.000081
+[INFO][19:08:06]: [Client #3] Epoch: [5/5][20/625]	Loss: 0.000707
+[INFO][19:08:06]: [Client #3] Epoch: [5/5][30/625]	Loss: 0.000433
+[INFO][19:08:06]: [Client #3] Epoch: [5/5][40/625]	Loss: 0.006661
+[INFO][19:08:06]: [Client #3] Epoch: [5/5][50/625]	Loss: 0.000765
+[INFO][19:08:06]: [Client #3] Epoch: [5/5][60/625]	Loss: 0.000017
+[INFO][19:08:06]: [Client #3] Epoch: [5/5][70/625]	Loss: 0.015434
+[INFO][19:08:06]: [Client #3] Epoch: [5/5][80/625]	Loss: 0.000026
+[INFO][19:08:06]: [Client #3] Epoch: [5/5][90/625]	Loss: 0.000035
+[INFO][19:08:06]: [Client #3] Epoch: [5/5][100/625]	Loss: 0.002049
+[INFO][19:08:07]: [Client #3] Epoch: [5/5][110/625]	Loss: 0.008654
+[INFO][19:08:07]: [Client #3] Epoch: [5/5][120/625]	Loss: 0.000569
+[INFO][19:08:07]: [Client #3] Epoch: [5/5][130/625]	Loss: 0.000900
+[INFO][19:08:07]: [Client #3] Epoch: [5/5][140/625]	Loss: 0.000189
+[INFO][19:08:07]: [Client #3] Epoch: [5/5][150/625]	Loss: 0.000798
+[INFO][19:08:07]: [Client #3] Epoch: [5/5][160/625]	Loss: 0.001233
+[INFO][19:08:07]: [Client #3] Epoch: [5/5][170/625]	Loss: 0.000776
+[INFO][19:08:07]: [Client #3] Epoch: [5/5][180/625]	Loss: 0.000007
+[INFO][19:08:07]: [Client #3] Epoch: [5/5][190/625]	Loss: 0.000250
+[INFO][19:08:08]: [Client #3] Epoch: [5/5][200/625]	Loss: 0.046535
+[INFO][19:08:08]: [Client #3] Epoch: [5/5][210/625]	Loss: 0.000459
+[INFO][19:08:08]: [Client #3] Epoch: [5/5][220/625]	Loss: 0.000287
+[INFO][19:08:08]: [Client #3] Epoch: [5/5][230/625]	Loss: 0.000094
+[INFO][19:08:08]: [Client #3] Epoch: [5/5][240/625]	Loss: 0.002245
+[INFO][19:08:08]: [Client #3] Epoch: [5/5][250/625]	Loss: 0.000019
+[INFO][19:08:08]: [Client #3] Epoch: [5/5][260/625]	Loss: 0.000306
+[INFO][19:08:08]: [Client #3] Epoch: [5/5][270/625]	Loss: 0.000011
+[INFO][19:08:08]: [Client #3] Epoch: [5/5][280/625]	Loss: 0.000902
+[INFO][19:08:08]: [Client #3] Epoch: [5/5][290/625]	Loss: 0.000558
+[INFO][19:08:09]: [Client #3] Epoch: [5/5][300/625]	Loss: 0.000443
+[INFO][19:08:09]: [Client #3] Epoch: [5/5][310/625]	Loss: 0.001776
+[INFO][19:08:09]: [Client #3] Epoch: [5/5][320/625]	Loss: 0.001182
+[INFO][19:08:09]: [Client #3] Epoch: [5/5][330/625]	Loss: 0.002299
+[INFO][19:08:09]: [Client #3] Epoch: [5/5][340/625]	Loss: 0.009622
+[INFO][19:08:09]: [Client #3] Epoch: [5/5][350/625]	Loss: 0.000623
+[INFO][19:08:09]: [Client #3] Epoch: [5/5][360/625]	Loss: 0.022219
+[INFO][19:08:09]: [Client #3] Epoch: [5/5][370/625]	Loss: 0.000654
+[INFO][19:08:09]: [Client #3] Epoch: [5/5][380/625]	Loss: 0.003889
+[INFO][19:08:10]: [Client #3] Epoch: [5/5][390/625]	Loss: 0.006661
+[INFO][19:08:10]: [Client #3] Epoch: [5/5][400/625]	Loss: 0.000035
+[INFO][19:08:10]: [Client #3] Epoch: [5/5][410/625]	Loss: 0.000011
+[INFO][19:08:10]: [Client #3] Epoch: [5/5][420/625]	Loss: 0.002078
+[INFO][19:08:10]: [Client #3] Epoch: [5/5][430/625]	Loss: 0.016259
+[INFO][19:08:10]: [Client #3] Epoch: [5/5][440/625]	Loss: 0.004890
+[INFO][19:08:10]: [Client #3] Epoch: [5/5][450/625]	Loss: 0.000042
+[INFO][19:08:10]: [Client #3] Epoch: [5/5][460/625]	Loss: 0.000265
+[INFO][19:08:10]: [Client #3] Epoch: [5/5][470/625]	Loss: 0.000041
+[INFO][19:08:11]: [Client #3] Epoch: [5/5][480/625]	Loss: 0.060681
+[INFO][19:08:11]: [Client #3] Epoch: [5/5][490/625]	Loss: 0.000752
+[INFO][19:08:11]: [Client #3] Epoch: [5/5][500/625]	Loss: 0.000044
+[INFO][19:08:11]: [Client #3] Epoch: [5/5][510/625]	Loss: 0.004675
+[INFO][19:08:11]: [Client #3] Epoch: [5/5][520/625]	Loss: 0.006065
+[INFO][19:08:11]: [Client #3] Epoch: [5/5][530/625]	Loss: 0.002123
+[INFO][19:08:11]: [Client #3] Epoch: [5/5][540/625]	Loss: 0.007775
+[INFO][19:08:11]: [Client #3] Epoch: [5/5][550/625]	Loss: 0.000130
+[INFO][19:08:11]: [Client #3] Epoch: [5/5][560/625]	Loss: 0.000282
+[INFO][19:08:11]: [Client #3] Epoch: [5/5][570/625]	Loss: 0.001719
+[INFO][19:08:12]: [Client #3] Epoch: [5/5][580/625]	Loss: 0.000014
+[INFO][19:08:12]: [Client #3] Epoch: [5/5][590/625]	Loss: 0.123842
+[INFO][19:08:12]: [Client #3] Epoch: [5/5][600/625]	Loss: 0.053296
+[INFO][19:08:12]: [Client #3] Epoch: [5/5][610/625]	Loss: 0.045254
+[INFO][19:08:12]: [Client #3] Epoch: [5/5][620/625]	Loss: 0.010565
+[INFO][19:08:12]: [Client #3] Model saved to ./models/pretrained/lenet5_3_56997.pth.
+[INFO][19:08:13]: [Client #3] Loading a model from ./models/pretrained/lenet5_3_56997.pth.
+[INFO][19:08:13]: [Client #3] Model trained.
+[INFO][19:08:13]: [Client #3] Inbound data has been processed.
+[INFO][19:08:13]: [Client #3] Outbound data is ready to be sent after being processed.
+[INFO][19:08:13]: [Client #3] Global unstructured pruning applied.
+[INFO][19:08:13]: [Client #3] Compressed model parameters.
+[INFO][19:08:13]: [Client #3] Sent 0.19 MB of payload data to the server (simulated).
+[INFO][19:08:13]: [Server #56994] Received 0.19 MB of payload data from client #3 (simulated).
+[INFO][19:08:13]: [Server #56994] Decompressed received model parameters.
+[INFO][19:08:13]: [Server #56994] Advancing the wall clock time to 1680649681.29.
+[INFO][19:08:13]: [Server #56994] Selecting client #2 for training.
+[INFO][19:08:13]: [Server #56994] Sending the current model to client #2 (simulated).
+[INFO][19:08:13]: [Server #56994] Sending 0.24 MB of payload data to client #2 (simulated).
+[INFO][19:08:13]: Client: Using Processor for sending payload: unstructured_pruning
+[INFO][19:08:13]: Client: Using Processor for sending payload: model_compress
+[INFO][19:08:13]: [Client #2] Selected by the server.
+[INFO][19:08:13]: [Client #2] Loading its data source...
+[INFO][19:08:13]: [Client #2] Dataset size: 60000
+[INFO][19:08:13]: [Client #2] Sampler: iid
+[INFO][19:08:13]: [Client #2] Received 0.24 MB of payload data from the server (simulated).
+[INFO][19:08:13]: [Client #2] Start to process inbound data.
+[INFO][19:08:13]: [93m[1m[Client #2] Started training in communication round #1.[0m
+[INFO][19:08:20]: [Client #2] Loading the dataset with size 20000.
+[INFO][19:08:20]: [93m[1m[Client #2] Started training epoch 1.[0m
+[INFO][19:08:20]: [Client #2] Epoch: [1/5][0/625]	Loss: 2.308403
+[INFO][19:08:20]: [Client #2] Epoch: [1/5][10/625]	Loss: 2.289614
+[INFO][19:08:20]: [Client #2] Epoch: [1/5][20/625]	Loss: 2.275544
+[INFO][19:08:20]: [Client #2] Epoch: [1/5][30/625]	Loss: 2.240790
+[INFO][19:08:20]: [Client #2] Epoch: [1/5][40/625]	Loss: 2.156274
+[INFO][19:08:21]: [Client #2] Epoch: [1/5][50/625]	Loss: 1.991602
+[INFO][19:08:21]: [Client #2] Epoch: [1/5][60/625]	Loss: 1.348215
+[INFO][19:08:21]: [Client #2] Epoch: [1/5][70/625]	Loss: 1.081167
+[INFO][19:08:21]: [Client #2] Epoch: [1/5][80/625]	Loss: 0.849721
+[INFO][19:08:21]: [Client #2] Epoch: [1/5][90/625]	Loss: 0.577471
+[INFO][19:08:21]: [Client #2] Epoch: [1/5][100/625]	Loss: 0.482642
+[INFO][19:08:21]: [Client #2] Epoch: [1/5][110/625]	Loss: 0.537262
+[INFO][19:08:21]: [Client #2] Epoch: [1/5][120/625]	Loss: 0.450405
+[INFO][19:08:21]: [Client #2] Epoch: [1/5][130/625]	Loss: 0.908540
+[INFO][19:08:21]: [Client #2] Epoch: [1/5][140/625]	Loss: 0.864453
+[INFO][19:08:22]: [Client #2] Epoch: [1/5][150/625]	Loss: 0.290789
+[INFO][19:08:22]: [Client #2] Epoch: [1/5][160/625]	Loss: 0.048097
+[INFO][19:08:22]: [Client #2] Epoch: [1/5][170/625]	Loss: 0.361544
+[INFO][19:08:22]: [Client #2] Epoch: [1/5][180/625]	Loss: 0.597846
+[INFO][19:08:22]: [Client #2] Epoch: [1/5][190/625]	Loss: 0.097995
+[INFO][19:08:22]: [Client #2] Epoch: [1/5][200/625]	Loss: 0.212391
+[INFO][19:08:22]: [Client #2] Epoch: [1/5][210/625]	Loss: 0.291782
+[INFO][19:08:22]: [Client #2] Epoch: [1/5][220/625]	Loss: 0.206461
+[INFO][19:08:22]: [Client #2] Epoch: [1/5][230/625]	Loss: 0.098316
+[INFO][19:08:22]: [Client #2] Epoch: [1/5][240/625]	Loss: 0.062115
+[INFO][19:08:23]: [Client #2] Epoch: [1/5][250/625]	Loss: 0.067165
+[INFO][19:08:23]: [Client #2] Epoch: [1/5][260/625]	Loss: 0.366476
+[INFO][19:08:23]: [Client #2] Epoch: [1/5][270/625]	Loss: 0.172353
+[INFO][19:08:23]: [Client #2] Epoch: [1/5][280/625]	Loss: 0.677950
+[INFO][19:08:23]: [Client #2] Epoch: [1/5][290/625]	Loss: 0.136299
+[INFO][19:08:23]: [Client #2] Epoch: [1/5][300/625]	Loss: 0.039907
+[INFO][19:08:23]: [Client #2] Epoch: [1/5][310/625]	Loss: 0.210195
+[INFO][19:08:23]: [Client #2] Epoch: [1/5][320/625]	Loss: 0.468598
+[INFO][19:08:23]: [Client #2] Epoch: [1/5][330/625]	Loss: 0.037747
+[INFO][19:08:24]: [Client #2] Epoch: [1/5][340/625]	Loss: 0.188323
+[INFO][19:08:24]: [Client #2] Epoch: [1/5][350/625]	Loss: 0.079129
+[INFO][19:08:24]: [Client #2] Epoch: [1/5][360/625]	Loss: 0.083246
+[INFO][19:08:24]: [Client #2] Epoch: [1/5][370/625]	Loss: 0.217442
+[INFO][19:08:24]: [Client #2] Epoch: [1/5][380/625]	Loss: 0.133017
+[INFO][19:08:24]: [Client #2] Epoch: [1/5][390/625]	Loss: 0.086931
+[INFO][19:08:24]: [Client #2] Epoch: [1/5][400/625]	Loss: 0.359317
+[INFO][19:08:24]: [Client #2] Epoch: [1/5][410/625]	Loss: 0.058744
+[INFO][19:08:24]: [Client #2] Epoch: [1/5][420/625]	Loss: 0.041569
+[INFO][19:08:24]: [Client #2] Epoch: [1/5][430/625]	Loss: 0.086287
+[INFO][19:08:25]: [Client #2] Epoch: [1/5][440/625]	Loss: 0.440346
+[INFO][19:08:25]: [Client #2] Epoch: [1/5][450/625]	Loss: 0.163633
+[INFO][19:08:25]: [Client #2] Epoch: [1/5][460/625]	Loss: 0.077410
+[INFO][19:08:25]: [Client #2] Epoch: [1/5][470/625]	Loss: 0.016897
+[INFO][19:08:25]: [Client #2] Epoch: [1/5][480/625]	Loss: 0.037828
+[INFO][19:08:25]: [Client #2] Epoch: [1/5][490/625]	Loss: 0.136452
+[INFO][19:08:25]: [Client #2] Epoch: [1/5][500/625]	Loss: 0.070195
+[INFO][19:08:25]: [Client #2] Epoch: [1/5][510/625]	Loss: 0.045209
+[INFO][19:08:25]: [Client #2] Epoch: [1/5][520/625]	Loss: 0.039069
+[INFO][19:08:26]: [Client #2] Epoch: [1/5][530/625]	Loss: 0.124368
+[INFO][19:08:26]: [Client #2] Epoch: [1/5][540/625]	Loss: 0.027353
+[INFO][19:08:26]: [Client #2] Epoch: [1/5][550/625]	Loss: 0.039456
+[INFO][19:08:26]: [Client #2] Epoch: [1/5][560/625]	Loss: 0.129084
+[INFO][19:08:26]: [Client #2] Epoch: [1/5][570/625]	Loss: 0.058998
+[INFO][19:08:26]: [Client #2] Epoch: [1/5][580/625]	Loss: 0.056486
+[INFO][19:08:26]: [Client #2] Epoch: [1/5][590/625]	Loss: 0.048573
+[INFO][19:08:26]: [Client #2] Epoch: [1/5][600/625]	Loss: 0.050484
+[INFO][19:08:26]: [Client #2] Epoch: [1/5][610/625]	Loss: 0.110762
+[INFO][19:08:26]: [Client #2] Epoch: [1/5][620/625]	Loss: 0.169488
+[INFO][19:08:27]: [93m[1m[Client #2] Started training epoch 2.[0m
+[INFO][19:08:27]: [Client #2] Epoch: [2/5][0/625]	Loss: 0.011179
+[INFO][19:08:27]: [Client #2] Epoch: [2/5][10/625]	Loss: 0.067725
+[INFO][19:08:27]: [Client #2] Epoch: [2/5][20/625]	Loss: 0.083747
+[INFO][19:08:27]: [Client #2] Epoch: [2/5][30/625]	Loss: 0.015476
+[INFO][19:08:27]: [Client #2] Epoch: [2/5][40/625]	Loss: 0.045071
+[INFO][19:08:27]: [Client #2] Epoch: [2/5][50/625]	Loss: 0.010767
+[INFO][19:08:27]: [Client #2] Epoch: [2/5][60/625]	Loss: 0.003511
+[INFO][19:08:27]: [Client #2] Epoch: [2/5][70/625]	Loss: 0.031762
+[INFO][19:08:27]: [Client #2] Epoch: [2/5][80/625]	Loss: 0.005929
+[INFO][19:08:27]: [Client #2] Epoch: [2/5][90/625]	Loss: 0.084060
+[INFO][19:08:28]: [Client #2] Epoch: [2/5][100/625]	Loss: 0.010913
+[INFO][19:08:28]: [Client #2] Epoch: [2/5][110/625]	Loss: 0.128785
+[INFO][19:08:28]: [Client #2] Epoch: [2/5][120/625]	Loss: 0.117640
+[INFO][19:08:28]: [Client #2] Epoch: [2/5][130/625]	Loss: 0.055358
+[INFO][19:08:28]: [Client #2] Epoch: [2/5][140/625]	Loss: 0.035171
+[INFO][19:08:28]: [Client #2] Epoch: [2/5][150/625]	Loss: 0.016956
+[INFO][19:08:28]: [Client #2] Epoch: [2/5][160/625]	Loss: 0.040356
+[INFO][19:08:28]: [Client #2] Epoch: [2/5][170/625]	Loss: 0.000521
+[INFO][19:08:28]: [Client #2] Epoch: [2/5][180/625]	Loss: 0.093000
+[INFO][19:08:29]: [Client #2] Epoch: [2/5][190/625]	Loss: 0.017920
+[INFO][19:08:29]: [Client #2] Epoch: [2/5][200/625]	Loss: 0.091336
+[INFO][19:08:29]: [Client #2] Epoch: [2/5][210/625]	Loss: 0.389370
+[INFO][19:08:29]: [Client #2] Epoch: [2/5][220/625]	Loss: 0.051456
+[INFO][19:08:29]: [Client #2] Epoch: [2/5][230/625]	Loss: 0.015055
+[INFO][19:08:29]: [Client #2] Epoch: [2/5][240/625]	Loss: 0.011782
+[INFO][19:08:29]: [Client #2] Epoch: [2/5][250/625]	Loss: 0.002415
+[INFO][19:08:29]: [Client #2] Epoch: [2/5][260/625]	Loss: 0.009957
+[INFO][19:08:29]: [Client #2] Epoch: [2/5][270/625]	Loss: 0.212816
+[INFO][19:08:30]: [Client #2] Epoch: [2/5][280/625]	Loss: 0.020444
+[INFO][19:08:30]: [Client #2] Epoch: [2/5][290/625]	Loss: 0.002044
+[INFO][19:08:30]: [Client #2] Epoch: [2/5][300/625]	Loss: 0.030923
+[INFO][19:08:30]: [Client #2] Epoch: [2/5][310/625]	Loss: 0.047323
+[INFO][19:08:30]: [Client #2] Epoch: [2/5][320/625]	Loss: 0.061632
+[INFO][19:08:30]: [Client #2] Epoch: [2/5][330/625]	Loss: 0.069293
+[INFO][19:08:30]: [Client #2] Epoch: [2/5][340/625]	Loss: 0.004262
+[INFO][19:08:30]: [Client #2] Epoch: [2/5][350/625]	Loss: 0.069804
+[INFO][19:08:30]: [Client #2] Epoch: [2/5][360/625]	Loss: 0.000483
+[INFO][19:08:30]: [Client #2] Epoch: [2/5][370/625]	Loss: 0.285479
+[INFO][19:08:31]: [Client #2] Epoch: [2/5][380/625]	Loss: 0.003726
+[INFO][19:08:31]: [Client #2] Epoch: [2/5][390/625]	Loss: 0.038151
+[INFO][19:08:31]: [Client #2] Epoch: [2/5][400/625]	Loss: 0.252657
+[INFO][19:08:31]: [Client #2] Epoch: [2/5][410/625]	Loss: 0.010179
+[INFO][19:08:31]: [Client #2] Epoch: [2/5][420/625]	Loss: 0.188470
+[INFO][19:08:31]: [Client #2] Epoch: [2/5][430/625]	Loss: 0.003954
+[INFO][19:08:31]: [Client #2] Epoch: [2/5][440/625]	Loss: 0.000963
+[INFO][19:08:31]: [Client #2] Epoch: [2/5][450/625]	Loss: 0.137089
+[INFO][19:08:31]: [Client #2] Epoch: [2/5][460/625]	Loss: 0.002679
+[INFO][19:08:32]: [Client #2] Epoch: [2/5][470/625]	Loss: 0.061655
+[INFO][19:08:32]: [Client #2] Epoch: [2/5][480/625]	Loss: 0.001118
+[INFO][19:08:32]: [Client #2] Epoch: [2/5][490/625]	Loss: 0.089082
+[INFO][19:08:32]: [Client #2] Epoch: [2/5][500/625]	Loss: 0.124317
+[INFO][19:08:32]: [Client #2] Epoch: [2/5][510/625]	Loss: 0.064438
+[INFO][19:08:32]: [Client #2] Epoch: [2/5][520/625]	Loss: 0.058300
+[INFO][19:08:32]: [Client #2] Epoch: [2/5][530/625]	Loss: 0.092589
+[INFO][19:08:32]: [Client #2] Epoch: [2/5][540/625]	Loss: 0.069994
+[INFO][19:08:32]: [Client #2] Epoch: [2/5][550/625]	Loss: 0.116801
+[INFO][19:08:32]: [Client #2] Epoch: [2/5][560/625]	Loss: 0.011429
+[INFO][19:08:33]: [Client #2] Epoch: [2/5][570/625]	Loss: 0.027060
+[INFO][19:08:33]: [Client #2] Epoch: [2/5][580/625]	Loss: 0.003486
+[INFO][19:08:33]: [Client #2] Epoch: [2/5][590/625]	Loss: 0.099353
+[INFO][19:08:33]: [Client #2] Epoch: [2/5][600/625]	Loss: 0.000859
+[INFO][19:08:33]: [Client #2] Epoch: [2/5][610/625]	Loss: 0.001979
+[INFO][19:08:33]: [Client #2] Epoch: [2/5][620/625]	Loss: 0.000177
+[INFO][19:08:33]: [93m[1m[Client #2] Started training epoch 3.[0m
+[INFO][19:08:33]: [Client #2] Epoch: [3/5][0/625]	Loss: 0.045531
+[INFO][19:08:33]: [Client #2] Epoch: [3/5][10/625]	Loss: 0.004266
+[INFO][19:08:33]: [Client #2] Epoch: [3/5][20/625]	Loss: 0.012828
+[INFO][19:08:34]: [Client #2] Epoch: [3/5][30/625]	Loss: 0.015434
+[INFO][19:08:34]: [Client #2] Epoch: [3/5][40/625]	Loss: 0.026716
+[INFO][19:08:34]: [Client #2] Epoch: [3/5][50/625]	Loss: 0.024747
+[INFO][19:08:34]: [Client #2] Epoch: [3/5][60/625]	Loss: 0.009259
+[INFO][19:08:34]: [Client #2] Epoch: [3/5][70/625]	Loss: 0.004276
+[INFO][19:08:34]: [Client #2] Epoch: [3/5][80/625]	Loss: 0.140573
+[INFO][19:08:34]: [Client #2] Epoch: [3/5][90/625]	Loss: 0.009200
+[INFO][19:08:34]: [Client #2] Epoch: [3/5][100/625]	Loss: 0.000897
+[INFO][19:08:34]: [Client #2] Epoch: [3/5][110/625]	Loss: 0.054542
+[INFO][19:08:34]: [Client #2] Epoch: [3/5][120/625]	Loss: 0.043207
+[INFO][19:08:35]: [Client #2] Epoch: [3/5][130/625]	Loss: 0.002512
+[INFO][19:08:35]: [Client #2] Epoch: [3/5][140/625]	Loss: 0.007958
+[INFO][19:08:35]: [Client #2] Epoch: [3/5][150/625]	Loss: 0.005757
+[INFO][19:08:35]: [Client #2] Epoch: [3/5][160/625]	Loss: 0.021934
+[INFO][19:08:35]: [Client #2] Epoch: [3/5][170/625]	Loss: 0.001063
+[INFO][19:08:35]: [Client #2] Epoch: [3/5][180/625]	Loss: 0.031041
+[INFO][19:08:35]: [Client #2] Epoch: [3/5][190/625]	Loss: 0.019910
+[INFO][19:08:35]: [Client #2] Epoch: [3/5][200/625]	Loss: 0.000142
+[INFO][19:08:35]: [Client #2] Epoch: [3/5][210/625]	Loss: 0.009888
+[INFO][19:08:36]: [Client #2] Epoch: [3/5][220/625]	Loss: 0.002466
+[INFO][19:08:36]: [Client #2] Epoch: [3/5][230/625]	Loss: 0.200845
+[INFO][19:08:36]: [Client #2] Epoch: [3/5][240/625]	Loss: 0.003896
+[INFO][19:08:36]: [Client #2] Epoch: [3/5][250/625]	Loss: 0.007047
+[INFO][19:08:36]: [Client #2] Epoch: [3/5][260/625]	Loss: 0.006266
+[INFO][19:08:36]: [Client #2] Epoch: [3/5][270/625]	Loss: 0.011088
+[INFO][19:08:36]: [Client #2] Epoch: [3/5][280/625]	Loss: 0.072517
+[INFO][19:08:36]: [Client #2] Epoch: [3/5][290/625]	Loss: 0.139629
+[INFO][19:08:36]: [Client #2] Epoch: [3/5][300/625]	Loss: 0.006648
+[INFO][19:08:36]: [Client #2] Epoch: [3/5][310/625]	Loss: 0.099659
+[INFO][19:08:37]: [Client #2] Epoch: [3/5][320/625]	Loss: 0.003116
+[INFO][19:08:37]: [Client #2] Epoch: [3/5][330/625]	Loss: 0.272084
+[INFO][19:08:37]: [Client #2] Epoch: [3/5][340/625]	Loss: 0.094881
+[INFO][19:08:37]: [Client #2] Epoch: [3/5][350/625]	Loss: 0.129148
+[INFO][19:08:37]: [Client #2] Epoch: [3/5][360/625]	Loss: 0.035382
+[INFO][19:08:37]: [Client #2] Epoch: [3/5][370/625]	Loss: 0.002645
+[INFO][19:08:37]: [Client #2] Epoch: [3/5][380/625]	Loss: 0.002905
+[INFO][19:08:37]: [Client #2] Epoch: [3/5][390/625]	Loss: 0.020528
+[INFO][19:08:37]: [Client #2] Epoch: [3/5][400/625]	Loss: 0.081453
+[INFO][19:08:38]: [Client #2] Epoch: [3/5][410/625]	Loss: 0.002079
+[INFO][19:08:38]: [Client #2] Epoch: [3/5][420/625]	Loss: 0.008253
+[INFO][19:08:38]: [Client #2] Epoch: [3/5][430/625]	Loss: 0.000600
+[INFO][19:08:38]: [Client #2] Epoch: [3/5][440/625]	Loss: 0.011528
+[INFO][19:08:38]: [Client #2] Epoch: [3/5][450/625]	Loss: 0.001594
+[INFO][19:08:38]: [Client #2] Epoch: [3/5][460/625]	Loss: 0.000386
+[INFO][19:08:38]: [Client #2] Epoch: [3/5][470/625]	Loss: 0.028227
+[INFO][19:08:38]: [Client #2] Epoch: [3/5][480/625]	Loss: 0.002446
+[INFO][19:08:38]: [Client #2] Epoch: [3/5][490/625]	Loss: 0.002693
+[INFO][19:08:39]: [Client #2] Epoch: [3/5][500/625]	Loss: 0.004146
+[INFO][19:08:39]: [Client #2] Epoch: [3/5][510/625]	Loss: 0.006707
+[INFO][19:08:39]: [Client #2] Epoch: [3/5][520/625]	Loss: 0.006548
+[INFO][19:08:39]: [Client #2] Epoch: [3/5][530/625]	Loss: 0.000594
+[INFO][19:08:39]: [Client #2] Epoch: [3/5][540/625]	Loss: 0.008844
+[INFO][19:08:39]: [Client #2] Epoch: [3/5][550/625]	Loss: 0.008311
+[INFO][19:08:39]: [Client #2] Epoch: [3/5][560/625]	Loss: 0.000334
+[INFO][19:08:39]: [Client #2] Epoch: [3/5][570/625]	Loss: 0.116587
+[INFO][19:08:39]: [Client #2] Epoch: [3/5][580/625]	Loss: 0.060911
+[INFO][19:08:39]: [Client #2] Epoch: [3/5][590/625]	Loss: 0.001003
+[INFO][19:08:40]: [Client #2] Epoch: [3/5][600/625]	Loss: 0.125245
+[INFO][19:08:40]: [Client #2] Epoch: [3/5][610/625]	Loss: 0.004360
+[INFO][19:08:40]: [Client #2] Epoch: [3/5][620/625]	Loss: 0.004577
+[INFO][19:08:40]: [93m[1m[Client #2] Started training epoch 4.[0m
+[INFO][19:08:40]: [Client #2] Epoch: [4/5][0/625]	Loss: 0.000824
+[INFO][19:08:40]: [Client #2] Epoch: [4/5][10/625]	Loss: 0.020660
+[INFO][19:08:40]: [Client #2] Epoch: [4/5][20/625]	Loss: 0.000351
+[INFO][19:08:40]: [Client #2] Epoch: [4/5][30/625]	Loss: 0.033982
+[INFO][19:08:40]: [Client #2] Epoch: [4/5][40/625]	Loss: 0.033908
+[INFO][19:08:40]: [Client #2] Epoch: [4/5][50/625]	Loss: 0.021014
+[INFO][19:08:40]: [Client #2] Epoch: [4/5][60/625]	Loss: 0.001433
+[INFO][19:08:41]: [Client #2] Epoch: [4/5][70/625]	Loss: 0.011900
+[INFO][19:08:41]: [Client #2] Epoch: [4/5][80/625]	Loss: 0.048440
+[INFO][19:08:41]: [Client #2] Epoch: [4/5][90/625]	Loss: 0.017843
+[INFO][19:08:41]: [Client #2] Epoch: [4/5][100/625]	Loss: 0.002883
+[INFO][19:08:41]: [Client #2] Epoch: [4/5][110/625]	Loss: 0.000742
+[INFO][19:08:41]: [Client #2] Epoch: [4/5][120/625]	Loss: 0.000194
+[INFO][19:08:41]: [Client #2] Epoch: [4/5][130/625]	Loss: 0.013087
+[INFO][19:08:41]: [Client #2] Epoch: [4/5][140/625]	Loss: 0.054283
+[INFO][19:08:41]: [Client #2] Epoch: [4/5][150/625]	Loss: 0.002294
+[INFO][19:08:42]: [Client #2] Epoch: [4/5][160/625]	Loss: 0.000235
+[INFO][19:08:42]: [Client #2] Epoch: [4/5][170/625]	Loss: 0.000183
+[INFO][19:08:42]: [Client #2] Epoch: [4/5][180/625]	Loss: 0.001806
+[INFO][19:08:42]: [Client #2] Epoch: [4/5][190/625]	Loss: 0.000504
+[INFO][19:08:42]: [Client #2] Epoch: [4/5][200/625]	Loss: 0.003414
+[INFO][19:08:42]: [Client #2] Epoch: [4/5][210/625]	Loss: 0.000144
+[INFO][19:08:42]: [Client #2] Epoch: [4/5][220/625]	Loss: 0.000307
+[INFO][19:08:42]: [Client #2] Epoch: [4/5][230/625]	Loss: 0.006923
+[INFO][19:08:42]: [Client #2] Epoch: [4/5][240/625]	Loss: 0.008409
+[INFO][19:08:42]: [Client #2] Epoch: [4/5][250/625]	Loss: 0.000262
+[INFO][19:08:43]: [Client #2] Epoch: [4/5][260/625]	Loss: 0.000095
+[INFO][19:08:43]: [Client #2] Epoch: [4/5][270/625]	Loss: 0.002878
+[INFO][19:08:43]: [Client #2] Epoch: [4/5][280/625]	Loss: 0.000467
+[INFO][19:08:43]: [Client #2] Epoch: [4/5][290/625]	Loss: 0.005285
+[INFO][19:08:43]: [Client #2] Epoch: [4/5][300/625]	Loss: 0.000183
+[INFO][19:08:43]: [Client #2] Epoch: [4/5][310/625]	Loss: 0.000353
+[INFO][19:08:43]: [Client #2] Epoch: [4/5][320/625]	Loss: 0.000072
+[INFO][19:08:43]: [Client #2] Epoch: [4/5][330/625]	Loss: 0.019085
+[INFO][19:08:43]: [Client #2] Epoch: [4/5][340/625]	Loss: 0.000022
+[INFO][19:08:44]: [Client #2] Epoch: [4/5][350/625]	Loss: 0.002331
+[INFO][19:08:44]: [Client #2] Epoch: [4/5][360/625]	Loss: 0.000781
+[INFO][19:08:44]: [Client #2] Epoch: [4/5][370/625]	Loss: 0.002027
+[INFO][19:08:44]: [Client #2] Epoch: [4/5][380/625]	Loss: 0.084374
+[INFO][19:08:44]: [Client #2] Epoch: [4/5][390/625]	Loss: 0.012100
+[INFO][19:08:44]: [Client #2] Epoch: [4/5][400/625]	Loss: 0.008790
+[INFO][19:08:44]: [Client #2] Epoch: [4/5][410/625]	Loss: 0.000497
+[INFO][19:08:44]: [Client #2] Epoch: [4/5][420/625]	Loss: 0.000099
+[INFO][19:08:44]: [Client #2] Epoch: [4/5][430/625]	Loss: 0.001684
+[INFO][19:08:44]: [Client #2] Epoch: [4/5][440/625]	Loss: 0.011031
+[INFO][19:08:45]: [Client #2] Epoch: [4/5][450/625]	Loss: 0.007155
+[INFO][19:08:45]: [Client #2] Epoch: [4/5][460/625]	Loss: 0.000108
+[INFO][19:08:45]: [Client #2] Epoch: [4/5][470/625]	Loss: 0.001551
+[INFO][19:08:45]: [Client #2] Epoch: [4/5][480/625]	Loss: 0.000203
+[INFO][19:08:45]: [Client #2] Epoch: [4/5][490/625]	Loss: 0.000443
+[INFO][19:08:45]: [Client #2] Epoch: [4/5][500/625]	Loss: 0.007634
+[INFO][19:08:45]: [Client #2] Epoch: [4/5][510/625]	Loss: 0.000632
+[INFO][19:08:45]: [Client #2] Epoch: [4/5][520/625]	Loss: 0.006926
+[INFO][19:08:45]: [Client #2] Epoch: [4/5][530/625]	Loss: 0.008831
+[INFO][19:08:46]: [Client #2] Epoch: [4/5][540/625]	Loss: 0.000002
+[INFO][19:08:46]: [Client #2] Epoch: [4/5][550/625]	Loss: 0.000953
+[INFO][19:08:46]: [Client #2] Epoch: [4/5][560/625]	Loss: 0.002194
+[INFO][19:08:46]: [Client #2] Epoch: [4/5][570/625]	Loss: 0.000007
+[INFO][19:08:46]: [Client #2] Epoch: [4/5][580/625]	Loss: 0.000255
+[INFO][19:08:46]: [Client #2] Epoch: [4/5][590/625]	Loss: 0.000980
+[INFO][19:08:46]: [Client #2] Epoch: [4/5][600/625]	Loss: 0.000540
+[INFO][19:08:46]: [Client #2] Epoch: [4/5][610/625]	Loss: 0.000838
+[INFO][19:08:46]: [Client #2] Epoch: [4/5][620/625]	Loss: 0.041815
+[INFO][19:08:46]: [93m[1m[Client #2] Started training epoch 5.[0m
+[INFO][19:08:47]: [Client #2] Epoch: [5/5][0/625]	Loss: 0.002333
+[INFO][19:08:47]: [Client #2] Epoch: [5/5][10/625]	Loss: 0.005623
+[INFO][19:08:47]: [Client #2] Epoch: [5/5][20/625]	Loss: 0.000744
+[INFO][19:08:47]: [Client #2] Epoch: [5/5][30/625]	Loss: 0.000594
+[INFO][19:08:47]: [Client #2] Epoch: [5/5][40/625]	Loss: 0.000276
+[INFO][19:08:47]: [Client #2] Epoch: [5/5][50/625]	Loss: 0.000887
+[INFO][19:08:47]: [Client #2] Epoch: [5/5][60/625]	Loss: 0.002060
+[INFO][19:08:47]: [Client #2] Epoch: [5/5][70/625]	Loss: 0.001005
+[INFO][19:08:47]: [Client #2] Epoch: [5/5][80/625]	Loss: 0.153180
+[INFO][19:08:48]: [Client #2] Epoch: [5/5][90/625]	Loss: 0.019040
+[INFO][19:08:48]: [Client #2] Epoch: [5/5][100/625]	Loss: 0.001456
+[INFO][19:08:48]: [Client #2] Epoch: [5/5][110/625]	Loss: 0.028149
+[INFO][19:08:48]: [Client #2] Epoch: [5/5][120/625]	Loss: 0.001533
+[INFO][19:08:48]: [Client #2] Epoch: [5/5][130/625]	Loss: 0.000130
+[INFO][19:08:48]: [Client #2] Epoch: [5/5][140/625]	Loss: 0.000762
+[INFO][19:08:48]: [Client #2] Epoch: [5/5][150/625]	Loss: 0.000516
+[INFO][19:08:48]: [Client #2] Epoch: [5/5][160/625]	Loss: 0.000114
+[INFO][19:08:48]: [Client #2] Epoch: [5/5][170/625]	Loss: 0.000500
+[INFO][19:08:49]: [Client #2] Epoch: [5/5][180/625]	Loss: 0.000684
+[INFO][19:08:49]: [Client #2] Epoch: [5/5][190/625]	Loss: 0.000095
+[INFO][19:08:49]: [Client #2] Epoch: [5/5][200/625]	Loss: 0.000233
+[INFO][19:08:49]: [Client #2] Epoch: [5/5][210/625]	Loss: 0.003247
+[INFO][19:08:49]: [Client #2] Epoch: [5/5][220/625]	Loss: 0.178632
+[INFO][19:08:49]: [Client #2] Epoch: [5/5][230/625]	Loss: 0.074062
+[INFO][19:08:49]: [Client #2] Epoch: [5/5][240/625]	Loss: 0.040567
+[INFO][19:08:49]: [Client #2] Epoch: [5/5][250/625]	Loss: 0.001315
+[INFO][19:08:49]: [Client #2] Epoch: [5/5][260/625]	Loss: 0.011469
+[INFO][19:08:49]: [Client #2] Epoch: [5/5][270/625]	Loss: 0.063919
+[INFO][19:08:50]: [Client #2] Epoch: [5/5][280/625]	Loss: 0.000249
+[INFO][19:08:50]: [Client #2] Epoch: [5/5][290/625]	Loss: 0.000180
+[INFO][19:08:50]: [Client #2] Epoch: [5/5][300/625]	Loss: 0.000030
+[INFO][19:08:50]: [Client #2] Epoch: [5/5][310/625]	Loss: 0.000034
+[INFO][19:08:50]: [Client #2] Epoch: [5/5][320/625]	Loss: 0.000818
+[INFO][19:08:50]: [Client #2] Epoch: [5/5][330/625]	Loss: 0.011809
+[INFO][19:08:50]: [Client #2] Epoch: [5/5][340/625]	Loss: 0.000976
+[INFO][19:08:50]: [Client #2] Epoch: [5/5][350/625]	Loss: 0.003248
+[INFO][19:08:50]: [Client #2] Epoch: [5/5][360/625]	Loss: 0.002768
+[INFO][19:08:51]: [Client #2] Epoch: [5/5][370/625]	Loss: 0.001526
+[INFO][19:08:51]: [Client #2] Epoch: [5/5][380/625]	Loss: 0.000473
+[INFO][19:08:51]: [Client #2] Epoch: [5/5][390/625]	Loss: 0.000065
+[INFO][19:08:51]: [Client #2] Epoch: [5/5][400/625]	Loss: 0.010245
+[INFO][19:08:51]: [Client #2] Epoch: [5/5][410/625]	Loss: 0.005254
+[INFO][19:08:51]: [Client #2] Epoch: [5/5][420/625]	Loss: 0.002679
+[INFO][19:08:51]: [Client #2] Epoch: [5/5][430/625]	Loss: 0.000949
+[INFO][19:08:51]: [Client #2] Epoch: [5/5][440/625]	Loss: 0.042510
+[INFO][19:08:51]: [Client #2] Epoch: [5/5][450/625]	Loss: 0.002163
+[INFO][19:08:52]: [Client #2] Epoch: [5/5][460/625]	Loss: 0.015949
+[INFO][19:08:52]: [Client #2] Epoch: [5/5][470/625]	Loss: 0.000115
+[INFO][19:08:52]: [Client #2] Epoch: [5/5][480/625]	Loss: 0.000541
+[INFO][19:08:52]: [Client #2] Epoch: [5/5][490/625]	Loss: 0.000451
+[INFO][19:08:52]: [Client #2] Epoch: [5/5][500/625]	Loss: 0.000792
+[INFO][19:08:52]: [Client #2] Epoch: [5/5][510/625]	Loss: 0.000153
+[INFO][19:08:52]: [Client #2] Epoch: [5/5][520/625]	Loss: 0.000336
+[INFO][19:08:52]: [Client #2] Epoch: [5/5][530/625]	Loss: 0.004981
+[INFO][19:08:52]: [Client #2] Epoch: [5/5][540/625]	Loss: 0.003696
+[INFO][19:08:53]: [Client #2] Epoch: [5/5][550/625]	Loss: 0.002902
+[INFO][19:08:53]: [Client #2] Epoch: [5/5][560/625]	Loss: 0.000815
+[INFO][19:08:53]: [Client #2] Epoch: [5/5][570/625]	Loss: 0.000206
+[INFO][19:08:53]: [Client #2] Epoch: [5/5][580/625]	Loss: 0.027280
+[INFO][19:08:53]: [Client #2] Epoch: [5/5][590/625]	Loss: 0.000260
+[INFO][19:08:53]: [Client #2] Epoch: [5/5][600/625]	Loss: 0.038343
+[INFO][19:08:53]: [Client #2] Epoch: [5/5][610/625]	Loss: 0.007137
+[INFO][19:08:53]: [Client #2] Epoch: [5/5][620/625]	Loss: 0.000058
+[INFO][19:08:53]: [Client #2] Model saved to ./models/pretrained/lenet5_2_56997.pth.
+[INFO][19:08:54]: [Client #2] Loading a model from ./models/pretrained/lenet5_2_56997.pth.
+[INFO][19:08:54]: [Client #2] Model trained.
+[INFO][19:08:54]: [Client #2] Inbound data has been processed.
+[INFO][19:08:54]: [Client #2] Outbound data is ready to be sent after being processed.
+[INFO][19:08:54]: [Client #2] Global unstructured pruning applied.
+[INFO][19:08:54]: [Client #2] Compressed model parameters.
+[INFO][19:08:54]: [Client #2] Sent 0.19 MB of payload data to the server (simulated).
+[INFO][19:08:54]: [Server #56994] Received 0.19 MB of payload data from client #2 (simulated).
+[INFO][19:08:54]: [Server #56994] Decompressed received model parameters.
+[INFO][19:08:54]: [Server #56994] Advancing the wall clock time to 1680649682.83.
+[INFO][19:08:54]: [Server #56994] All 2 client report(s) received. Processing.
+[INFO][19:08:54]: [Server #56994] Updated weights have been received.
+[INFO][19:08:54]: [Server #56994] Aggregating model weight deltas.
+[INFO][19:08:54]: [Server #56994] Finished aggregating updated weights.
+[INFO][19:08:54]: [Server #56994] Started model testing.
+======== Running on http://127.0.0.1:8000 ========
+(Press CTRL+C to quit)
+[INFO][19:09:06]: [93m[1m[Server #56994] Global model accuracy: 97.84%
+[0m
+[INFO][19:09:06]: [Server #56994] All client reports have been processed.
+[INFO][19:09:06]: [Server #56994] Saving the checkpoint to ./checkpoints/checkpoint_lenet5_1.pth.
+[INFO][19:09:06]: [Server #56994] Model saved to ./checkpoints/checkpoint_lenet5_1.pth.
+[INFO][19:09:06]: [Server #56994] Target accuracy reached.
+[INFO][19:09:06]: [Server #56994] Training concluded.
+[INFO][19:09:06]: [Server #56994] Model saved to ./models/pretrained/lenet5.pth.
+[INFO][19:09:06]: [Server #56994] Closing the server.
+[INFO][19:09:06]: Closing the connection to client #1.
+[INFO][19:09:06]: [Client #1] The server disconnected the connection.
